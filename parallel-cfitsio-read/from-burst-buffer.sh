@@ -8,4 +8,4 @@ date
 cp -v /project/projectdirs/cosmo/staging/decam-public/2014-05-27/*.fits.fz $DW_JOB_STRIPED/.
 date
 
-srun -n 70 ./bb-cfitsio-read bb-cfitsio-read-from-bb $DW_JOB_STRIPED/*.fits.fz
+srun -n 70 ./parallel-cfitsio-read from-burst-buffer $DW_JOB_STRIPED/*.fits.fz

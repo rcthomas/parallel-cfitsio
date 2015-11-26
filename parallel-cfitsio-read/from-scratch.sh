@@ -9,4 +9,4 @@ mkdir -p $scratch
 cp -v /project/projectdirs/cosmo/staging/decam-public/2014-05-27/*.fits.fz $scratch/.
 date
 
-srun -n 70 ./bb-cfitsio-read bb-cfitsio-read-from-sc $scratch/*.fits.fz
+srun -n 70 ./parallel-cfitsio-read from-scratch $scratch/*.fits.fz
